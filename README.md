@@ -1,5 +1,12 @@
 # spring-running-information-analysis
-## jpa h2 &amp; creating restapi mapping
+## Using JPA with h2 database creating restapi mapping accomplished below:
+A information analysis Restful service analyze running info request and generate health related response
+* ‘>>’ based on input request, create a list of runninginformation
+* ‘>>’ calculate heart rate and set health warning level in response
+* ‘>>’ POST /runninginfo?page=0&size=10
+* ‘>>’ GET /runninginfo/{runningId}?page=0&size=10
+* ‘>>’ DELETE /runninginfo/{runningId}
+
 * Please reference configuration_images/input_output_json for sample result
 * Please reference "environment setup" section to prepare runtime
 * Please reference "docker&mysql setup" section to setup docker and mysql environment
