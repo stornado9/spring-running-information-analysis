@@ -1,6 +1,6 @@
 # spring-running-information-analysis
 ## jpa h2 &amp; creating restapi mapping
-* Please reference input&output.pdf for sample result
+* Please reference configuration_images/input_output_json for sample result
 * Please reference "environment setup" section to prepare runtime
 * Please reference "docker&mysql setup" section to setup docker and mysql environment
 * remainingissue&tobecomplete is current outstanding problem to be resolve in upcoming fixes
@@ -9,8 +9,8 @@
 
 * 1)Open dowloaded project in intelliJ, home directory runninginformation-analysis-service, in terminal run "$mvn clean install"
 * 2)cd target[where compiled binary located] run "java -jar runninginformation-analysis-service"
-* 3)open Postman, POST "http://http://127.0.0.1:8080/runninginfo" with request body showing in input&output.pdf
-* 4)open Postman, POST "http://localhost:8080/runninginfo/7c01233d-bed4-4cbd-9c28-9282a02a7038?page=0&size=10 with request body showing in input&output.pdf
+* 3)open Postman, POST "http://http://127.0.0.1:8080/runninginfo" with request body can be found at configuration_images/input_output_json
+* 4)open Postman, POST "http://localhost:8080/runninginfo/7c01233d-bed4-4cbd-9c28-9282a02a7038?page=0&size=10 with request body can be found at configuration_images/input_output_json
 
 ## Please follow below docker&mysql Setup :
 
@@ -25,3 +25,9 @@ show databases;
 * 4)Run docker container:docker start nikesql
 * 5)Stop docker containser: docker stop nikesql
 * 6)check docker process: docker ps -a
+* 7)configuration of the project setting can be found at configuration_images/mysql*
+
+## Remainingissue & Tobecomplete
+* 1)UserInfo is missing from result json
+* 2)HealthWarningLevel is not sorted in decreasing order
+
