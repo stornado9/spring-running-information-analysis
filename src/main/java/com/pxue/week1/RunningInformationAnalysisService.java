@@ -1,0 +1,11 @@
+package com.pxue.week1;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class RunningInformationAnalysisService {
+    public static void main(String[] args){
+        SpringApplication.run(RunningInformationAnalysisService.class, args);
+    }
+}

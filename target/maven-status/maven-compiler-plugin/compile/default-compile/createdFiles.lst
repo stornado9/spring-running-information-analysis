@@ -1,0 +1,8 @@
+com/pxue/week1/service/impl/RunningInformationAnalysisImpl.class
+com/pxue/week1/rest/RunningInformationRestController.class
+com/pxue/week1/service/RunningInformationAnalysisService.class
+com/pxue/week1/RunningInformationAnalysisService.class
+com/pxue/week1/domain/InformationRepository.class
+com/pxue/week1/domain/Information.class
+com/pxue/week1/domain/Information$WarnigLevel.class
+com/pxue/week1/domain/UserInfo.class
