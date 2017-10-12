@@ -26,11 +26,11 @@ public class RunningInformationAnalysisImpl implements RunningInformationAnalysi
     public Page<Information> findByRunningId(String runningId, Pageable pageable) {
         return informationRepository.findByRunningId(runningId, pageable);
     }
-/*
+
     @Override
-    public Page<Information> findByhealthWarningLevelDecrease(String healthWarningLevel, Pageable pageable){
-        return informationRepository.findByhealthWarningLevelDecrease(healthWarningLevel, pageable);
-    }*/
+    public Page<Information> findAllByOrderByHeartRateDesc(String heartRate, Pageable pageable){
+        return informationRepository.findAllByOrderByHeartRateDesc(heartRate, pageable);
+    }
 
     @Override
     public void deleteByRunningId(String runningId){

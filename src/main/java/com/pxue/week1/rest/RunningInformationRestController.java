@@ -38,10 +38,10 @@ public class RunningInformationRestController {
     }
 
     //GET: http://127.0.0.1:8080/runninginfo?page=0&size=2
-    /*@RequestMapping(value = "/runninginfo", method = RequestMethod.GET)
-    public Page<Information> findByhealthWarningLevelDecrease(@PathVariable String healthWarningLevel, @RequestParam(name="page") int page,
+    @RequestMapping(value = "/runninginfo", method = RequestMethod.GET)
+    public Page<Information> findAllByOrderByHeartRateDesc(@PathVariable String heartRate, @RequestParam(name="page") int page,
                                                               @RequestParam(name="size") int size) {
-        return this.informationAnalysisService.findByhealthWarningLevelDecrease(healthWarningLevel, new PageRequest(page, size));
-    }*/
+        return this.informationAnalysisService.findAllByOrderByHeartRateDesc(heartRate, new PageRequest(page, size));
+    }
 
 }

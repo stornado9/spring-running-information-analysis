@@ -9,6 +9,6 @@ import java.util.List;
 public interface RunningInformationAnalysisService {
     List<Information> saveInformationAnalysis(List<Information> InformationAnalysis);
     Page<Information> findByRunningId(String runningId, Pageable pageable);
-    //Page<Information> findByhealthWarningLevelDecrease(String healthWarningLevel, Pageable pageable);
+    Page<Information> findAllByOrderByHeartRateDesc(String heartRate, Pageable pageable);
     void deleteByRunningId(String runningId);
 }
