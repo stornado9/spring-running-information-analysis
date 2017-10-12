@@ -1,5 +1,5 @@
 # spring-running-information-analysis
-## Using JPA with h2 database creating restapi mapping accomplished below:
+## Using JPA with h2 database creating restapi request mapping accomplished below:
 A information analysis Restful service analyze running info request and generate health related response
 * >> based on input request, create a list of runninginformation
 * >> calculate heart rate and set health warning level in desceding order in response
@@ -18,9 +18,9 @@ A information analysis Restful service analyze running info request and generate
 
 * 2)cd target[where compiled binary located] run "java -jar runninginformation-analysis-service"
 
-* 3)open Postman, POST "http://http://127.0.0.1:8080/runninginfo" with request body can be found at configuration_images/input_output_json
+* 3)open Postman, POST "http://http://127.0.0.1:8080/runninginfo" with request body can be found at configuration_images/input_json.png which generate a request to server 127.0.0.1
 
-* 4)open Postman, POST "http://localhost:8080/runninginfo/7c01233d-bed4-4cbd-9c28-9282a02a7038?page=0&size=10 with request body can be found at configuration_images/input_output_json
+* 4)open Postman, GET "http://localhost:8080/runninginfo/7c01233d-bed4-4cbd-9c28-9282a02a7038?page=0&size=10 which returns result json can be found at configuration_images/output_json_desc.png
 
 ## Please follow below docker&mysql Setup :
 
