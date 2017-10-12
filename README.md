@@ -2,7 +2,7 @@
 ## Using JPA with h2 database creating restapi mapping accomplished below:
 A information analysis Restful service analyze running info request and generate health related response
 * >> based on input request, create a list of runninginformation
-* >> calculate heart rate and set health warning level in response
+* >> calculate heart rate and set health warning level in desceding order in response
 * >> POST /runninginfo?page=0&size=10
 * >> GET /runninginfo/{runningId}?page=0&size=10
 * >> DELETE /runninginfo/{runningId}
@@ -47,5 +47,5 @@ show databases;
 
 ## Remainingissue & Tobecomplete
 * 1)UserInfo is missing from result json
-* 2)HealthWarningLevel is not sorted in decreasing order
+
 
